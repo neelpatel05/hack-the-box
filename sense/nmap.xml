@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sun May 31 05:04:51 2020 as: nmap -sC -A -p1-65535 -oA nmap 10.10.10.60 -->
+<nmaprun scanner="nmap" args="nmap -sC -A -p1-65535 -oA nmap 10.10.10.60" start="1590915891" startstr="Sun May 31 05:04:51 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1590915891" endtime="1590916106"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.10.10.60" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="lighttpd" version="1.4.35" method="probed" conf="10"><cpe>cpe:/a:lighttpd:lighttpd:1.4.35</cpe></service><script id="http-server-header" output="lighttpd/1.4.35"><elem>lighttpd/1.4.35</elem>
+</script><script id="http-title" output="Did not follow redirect to https://10.10.10.60/"><elem key="redirect_url">https://10.10.10.60/</elem>
+</script><script id="https-redirect" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="https" tunnel="ssl" method="table" conf="3"/><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<osmatch name="Comau C4G robot control unit" accuracy="92" line="19189">
+<osclass type="specialized" vendor="Comau" osfamily="embedded" accuracy="92"/>
+</osmatch>
+</os>
+<uptime seconds="92" lastboot="Sun May 31 05:06:54 2020"/>
+<distance value="2"/>
+<tcpsequence index="252" difficulty="Good luck!" values="C45FA247,327FE47,2B32ADB7,7E0AEA09,3633903F,87EACA11"/>
+<ipidsequence class="Randomized" values="1DBF,51,F36C,EBD,8926,A3D6"/>
+<tcptssequence class="other" values="215F273E,B5BD39A6,ED77339D,D0708EF9,24CA899,D5947639"/>
+<trace port="80" proto="tcp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="25.39"/>
+<hop ttl="2" ipaddr="10.10.10.60" rtt="21.93"/>
+</trace>
+<times srtt="20721" rttvar="1880" to="100000"/>
+</host>
+<runstats><finished time="1590916106" timestr="Sun May 31 05:08:26 2020" elapsed="215.94" summary="Nmap done at Sun May 31 05:08:26 2020; 1 IP address (1 host up) scanned in 215.94 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

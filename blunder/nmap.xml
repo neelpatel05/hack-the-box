@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sun May 31 09:19:15 2020 as: nmap -p1-65535 -sC -A -oA nmap 10.10.10.191 -->
+<nmaprun scanner="nmap" args="nmap -p1-65535 -sC -A -oA nmap 10.10.10.191" start="1590931155" startstr="Sun May 31 09:19:15 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1590931155" endtime="1590931286"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.10.10.191" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="closed" reason="reset" reason_ttl="63"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.41" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.41</cpe></service><script id="http-generator" output="Blunder"/><script id="http-server-header" output="Apache/2.4.41 (Ubuntu)"><elem>Apache/2.4.41 (Ubuntu)</elem>
+</script><script id="http-title" output="Blunder | A blunder of interesting facts"><elem key="title">Blunder | A blunder of interesting facts</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<portused state="closed" proto="tcp" portid="21"/>
+<osmatch name="HP P2000 G3 NAS device" accuracy="91" line="34647">
+<osclass type="storage-misc" vendor="HP" osfamily="embedded" accuracy="91"><cpe>cpe:/h:hp:p2000_g3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32" accuracy="90" line="55463">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Infomir MAG-250 set-top box" accuracy="90" line="59437">
+<osclass type="media device" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="media device" vendor="Infomir" osfamily="embedded" accuracy="90"><cpe>cpe:/h:infomir:mag-250</cpe></osclass>
+</osmatch>
+<osmatch name="Ubiquiti AirMax NanoStation WAP (Linux 2.6.32)" accuracy="90" line="61488">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+<osclass type="WAP" vendor="Ubiquiti" osfamily="embedded" accuracy="90"><cpe>cpe:/h:ubnt:airmax_nanostation</cpe></osclass>
+</osmatch>
+<osmatch name="Ubiquiti AirOS 5.5.9" accuracy="90" line="102769">
+<osclass type="WAP" vendor="Ubiquiti" osfamily="AirOS" osgen="5.X" accuracy="90"><cpe>cpe:/o:ubnt:airos:5.5.9</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 3.13" accuracy="89" line="56411">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.3" accuracy="89" line="65197">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:3.3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 3.1" accuracy="89" line="56315">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.7" accuracy="89" line="65676">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:3.7</cpe></osclass>
+</osmatch>
+<osmatch name="Netgear RAIDiator 4.2.21 (Linux 2.6.37)" accuracy="89" line="87985">
+<osclass type="storage-misc" vendor="Netgear" osfamily="RAIDiator" osgen="4.X" accuracy="89"><cpe>cpe:/o:netgear:raidiator:4.2.21</cpe></osclass>
+<osclass type="storage-misc" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:2.6.37</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="2437360" lastboot="Sun May  3 04:18:46 2020"/>
+<distance value="2"/>
+<tcpsequence index="258" difficulty="Good luck!" values="DC61F29E,74FAFF7E,D8196811,FE029080,6A4FD2FA,D10C780B"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="914724EC,91472556,914725B6,9147261A,91472683,914726E6"/>
+<trace port="21" proto="tcp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="21.19"/>
+<hop ttl="2" ipaddr="10.10.10.191" rtt="21.44"/>
+</trace>
+<times srtt="20239" rttvar="1939" to="100000"/>
+</host>
+<runstats><finished time="1590931286" timestr="Sun May 31 09:21:26 2020" elapsed="131.74" summary="Nmap done at Sun May 31 09:21:26 2020; 1 IP address (1 host up) scanned in 131.74 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

