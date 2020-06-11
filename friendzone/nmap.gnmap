@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Thu Jun 11 09:59:52 2020 as: nmap -p- -sC -A -sV -oA nmap 10.10.10.123
+Host: 10.10.10.123 ()	Status: Up
+Host: 10.10.10.123 ()	Ports: 21/open/tcp//ftp//vsftpd 3.0.3/, 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4 (Ubuntu Linux; protocol 2.0)/, 53/open/tcp//domain//ISC BIND 9.11.3-1ubuntu1.2 (Ubuntu Linux)/, 80/open/tcp//http//Apache httpd 2.4.29 ((Ubuntu))/, 139/open/tcp//netbios-ssn//Samba smbd 3.X - 4.X (workgroup: WORKGROUP)/, 443/open/tcp//ssl|http//Apache httpd 2.4.29/, 445/open/tcp//netbios-ssn//Samba smbd 4.7.6-Ubuntu (workgroup: WORKGROUP)/	Ignored State: closed (65528)	Seq Index: 259	IP ID Seq: All zeros
+# Nmap done at Thu Jun 11 10:01:43 2020 -- 1 IP address (1 host up) scanned in 111.86 seconds

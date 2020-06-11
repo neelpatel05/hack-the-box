@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Wed Jun 10 14:00:00 2020 as: nmap -p- -sC -sV -A -oA nmap 10.10.10.111
+Host: 10.10.10.111 ()	Status: Up
+Host: 10.10.10.111 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.2p2 Ubuntu 4ubuntu2.4 (Ubuntu Linux; protocol 2.0)/, 139/open/tcp//netbios-ssn//Samba smbd 3.X - 4.X (workgroup: WORKGROUP)/, 445/open/tcp//netbios-ssn//Samba smbd 4.3.11-Ubuntu (workgroup: WORKGROUP)/, 1880/open/tcp//http//Node.js (Express middleware)/, 9999/open/tcp//http//nginx 1.10.3 (Ubuntu)/	Ignored State: closed (65530)	Seq Index: 249	IP ID Seq: All zeros
+# Nmap done at Wed Jun 10 14:01:10 2020 -- 1 IP address (1 host up) scanned in 71.28 seconds
