@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Wed Jul  1 08:41:22 2020 as: nmap -p- -sC -sV -A -oA nmap 10.10.10.63 -->
+<nmaprun scanner="nmap" args="nmap -p- -sC -sV -A -oA nmap 10.10.10.63" start="1593607282" startstr="Wed Jul  1 08:41:22 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1593607283" endtime="1593607486"><status state="up" reason="echo-reply" reason_ttl="127"/>
+<address addr="10.10.10.63" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65531">
+<extrareasons reason="no-responses" count="65531"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft IIS httpd" version="10.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:iis:10.0</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-methods" output="&#xa;  Potentially risky methods: TRACE"><table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-server-header" output="Microsoft-IIS/10.0"><elem>Microsoft-IIS/10.0</elem>
+</script><script id="http-title" output="Ask Jeeves"><elem key="title">Ask Jeeves</elem>
+</script></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" product="Microsoft Windows 7 - 10 microsoft-ds" extrainfo="workgroup: WORKGROUP" hostname="JEEVES" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="50000"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Jetty" version="9.4.z-SNAPSHOT" method="probed" conf="10"><cpe>cpe:/a:mortbay:jetty:9.4.z-snapshot</cpe></service><script id="http-server-header" output="Jetty(9.4.z-SNAPSHOT)"><elem>Jetty(9.4.z-SNAPSHOT)</elem>
+</script><script id="http-title" output="Error 404 Not Found"><elem key="title">Error 404 Not Found</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<osmatch name="Microsoft Windows Server 2008 R2" accuracy="90" line="74118">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="90"><cpe>cpe:/o:microsoft:windows_server_2008:r2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 10 1511 - 1607" accuracy="87" line="69178">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="10" accuracy="87"><cpe>cpe:/o:microsoft:windows_10</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 10 1607" accuracy="85" line="69232">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="10" accuracy="85"><cpe>cpe:/o:microsoft:windows_10:1607</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 10 1511" accuracy="85" line="69505">
+<osclass type="specialized" vendor="Microsoft" osfamily="Windows" osgen="10" accuracy="85"><cpe>cpe:/o:microsoft:windows_10:1511</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2008 R2 SP1 or Windows 8" accuracy="85" line="74646">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="85"><cpe>cpe:/o:microsoft:windows_server_2008:r2:sp1</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8" accuracy="85"><cpe>cpe:/o:microsoft:windows_8</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7 Professional or Windows 8" accuracy="85" line="76543">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="85"><cpe>cpe:/o:microsoft:windows_7::-:professional</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8" accuracy="85"><cpe>cpe:/o:microsoft:windows_8</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7 SP1 or Windows Server 2008 SP2 or 2008 R2 SP1" accuracy="85" line="77277">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="85"><cpe>cpe:/o:microsoft:windows_7::sp1</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="85"><cpe>cpe:/o:microsoft:windows_server_2008::sp2</cpe><cpe>cpe:/o:microsoft:windows_server_2008:r2:sp1</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Vista SP0 or SP1, Windows Server 2008 SP1, or Windows 7" accuracy="85" line="79575">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="Vista" accuracy="85"><cpe>cpe:/o:microsoft:windows_vista::-</cpe><cpe>cpe:/o:microsoft:windows_vista::sp1</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="85"><cpe>cpe:/o:microsoft:windows_server_2008::sp1</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="85"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Vista SP2" accuracy="85" line="79804">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="Vista" accuracy="85"><cpe>cpe:/o:microsoft:windows_vista::sp2</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="267" lastboot="Wed Jul  1 08:40:19 2020"/>
+<distance value="2"/>
+<tcpsequence index="253" difficulty="Good luck!" values="30C2E10F,62515589,115EA5F6,BEF2A736,E26B1FEC,2B4B8B6B"/>
+<ipidsequence class="Incremental" values="3A00,3A01,3A02,3A03,3A04,3A05"/>
+<tcptssequence class="1000HZ" values="36F03,36F67,36FDB,3703F,370A9,37113"/>
+<hostscript><script id="clock-skew" output="mean: 5h01m17s, deviation: 0s, median: 5h01m17s"><elem key="stddev">0</elem>
+<elem key="median">18077</elem>
+<elem key="mean">18077</elem>
+<elem key="count">2</elem>
+</script><script id="smb-os-discovery" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb-security-mode" output="&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smb2-security-mode" output="&#xa;  2.02: &#xa;    Message signing enabled but not required"><table key="2.02">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="smb2-time" output="&#xa;  date: 2020-07-01T17:45:25&#xa;  start_date: 2020-07-01T17:41:59"><elem key="date">2020-07-01T17:45:25</elem>
+<elem key="start_date">2020-07-01T17:41:59</elem>
+</script></hostscript><trace port="80" proto="tcp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="24.57"/>
+<hop ttl="2" ipaddr="10.10.10.63" rtt="25.42"/>
+</trace>
+<times srtt="22476" rttvar="3770" to="100000"/>
+</host>
+<runstats><finished time="1593607486" timestr="Wed Jul  1 08:44:46 2020" elapsed="204.31" summary="Nmap done at Wed Jul  1 08:44:46 2020; 1 IP address (1 host up) scanned in 204.31 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

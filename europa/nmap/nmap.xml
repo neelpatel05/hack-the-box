@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Tue Jun 30 21:20:39 2020 as: nmap -p- -sC -sV -A -oA nmap 10.10.10.22 -->
+<nmaprun scanner="nmap" args="nmap -p- -sC -sV -A -oA nmap 10.10.10.22" start="1593566439" startstr="Tue Jun 30 21:20:39 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1593566441" endtime="1593566567"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.10.10.22" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-responses" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="7.2p2 Ubuntu 4ubuntu2.2" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.2p2</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 6b:55:42:0a:f7:06:8c:67:c0:e2:5c:05:db:09:fb:78 (RSA)&#xa;  256 b1:ea:5e:c4:1c:0a:96:9e:93:db:1d:ad:22:50:74:75 (ECDSA)&#xa;  256 33:1f:16:8d:c0:24:78:5f:5b:f5:6d:7f:f7:b4:f2:e5 (ED25519)"><table>
+<elem key="fingerprint">6b55420af7068c67c0e25c05db09fb78</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQCh1/OK73CDKnJigk6uMUzDLSQhCHSpt9xL+SJrizWdCa7edGviU3NU/8So5xOOgzV1k8u3qHsudNnTSiH8Ek9d2c48B3xYHZn5+nPDv22fZ82LIRKd5qSLhthk91bL3uV+/CURpOZshvo0bVPS48UQaw5r7pWTE0goB+qyG2csY7hr3+9C7Sx4L/Vx7MOFuGAoy/EnpHG10f12ZJ6IVrX8mMEyZGb3Bh7crRN8tQ2RAvnJxyj+1ZeDo7Vr2F75r//dEL2iQ4S2Iuz8BocjQMREyIguIOSOJxjc/L52TpioRHnNK/aEArT02uakB4jRyd5LTSsijjitgUlAk/3H2cYd</elem>
+<elem key="bits">2048</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+<table>
+<elem key="fingerprint">b1ea5ec41c0a969e93db1dad22507475</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEqrLpdz7aDIUDy3bslqFlbGCrL4Q6tQmesbTP73F/Rv0GO6bb3zHETnZwVB5AKes/pQdRrbDlQCtR2v2WsTXsw=</elem>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+<table>
+<elem key="fingerprint">331f168dc024785f5bf56d7ff7b4f2e5</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIDE2hVC32u7eNINSvsmSQkbMlUkJ7s0oiG/bxPhwZb/b</elem>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.18" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.18</cpe></service><script id="http-server-header" output="Apache/2.4.18 (Ubuntu)"><elem>Apache/2.4.18 (Ubuntu)</elem>
+</script><script id="http-title" output="Apache2 Ubuntu Default Page: It works"><elem key="title">Apache2 Ubuntu Default Page: It works</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.18" extrainfo="(Ubuntu)" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.18</cpe></service><script id="http-server-header" output="Apache/2.4.18 (Ubuntu)"><elem>Apache/2.4.18 (Ubuntu)</elem>
+</script><script id="http-title" output="Apache2 Ubuntu Default Page: It works"><elem key="title">Apache2 Ubuntu Default Page: It works</elem>
+</script><script id="ssl-cert" output="Subject: commonName=europacorp.htb/organizationName=EuropaCorp Ltd./stateOrProvinceName=Attica/countryName=GR&#xa;Subject Alternative Name: DNS:www.europacorp.htb, DNS:admin-portal.europacorp.htb&#xa;Not valid before: 2017-04-19T09:06:22&#xa;Not valid after:  2027-04-17T09:06:22"><table key="subject">
+<elem key="countryName">GR</elem>
+<elem key="organizationName">EuropaCorp Ltd.</elem>
+<elem key="stateOrProvinceName">Attica</elem>
+<elem key="localityName">Athens</elem>
+<elem key="organizationalUnitName">IT</elem>
+<elem key="emailAddress">admin@europacorp.htb</elem>
+<elem key="commonName">europacorp.htb</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">GR</elem>
+<elem key="organizationName">EuropaCorp Ltd.</elem>
+<elem key="stateOrProvinceName">Attica</elem>
+<elem key="localityName">Athens</elem>
+<elem key="organizationalUnitName">IT</elem>
+<elem key="emailAddress">admin@europacorp.htb</elem>
+<elem key="commonName">europacorp.htb</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">userdata: 0x55a9bba7f608</elem>
+<elem key="bits">3072</elem>
+<elem key="modulus">userdata: 0x55a9bba7f648</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="value">9D:C3:4F:60:FE:24:6C:68:AB:7C:47:5D:FB:3D:1A:53:01:FB:93:81</elem>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+</table>
+<table>
+<elem key="value">DNS:www.europacorp.htb, DNS:admin-portal.europacorp.htb</elem>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+</table>
+<table>
+<elem key="value">keyid:9D:C3:4F:60:FE:24:6C:68:AB:7C:47:5D:FB:3D:1A:53:01:FB:93:81&#xa;</elem>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+</table>
+<table>
+<elem key="value">CA:TRUE</elem>
+<elem key="name">X509v3 Basic Constraints</elem>
+</table>
+<table>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="name">X509v3 Key Usage</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2017-04-19T09:06:22</elem>
+<elem key="notAfter">2027-04-17T09:06:22</elem>
+</table>
+<elem key="md5">35d51c047ae80f5c35a0bc4953e5d085</elem>
+<elem key="sha1">ced98f011228e35d83d32634b4c1ed52b9173335</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFSDCCA7CgAwIBAgIJAPGhMP4FtiTCMA0GCSqGSIb3DQEBCwUAMIGUMQswCQYD&#xa;VQQGEwJHUjEPMA0GA1UECAwGQXR0aWNhMQ8wDQYDVQQHDAZBdGhlbnMxGDAWBgNV&#xa;BAoMD0V1cm9wYUNvcnAgTHRkLjELMAkGA1UECwwCSVQxFzAVBgNVBAMMDmV1cm9w&#xa;YWNvcnAuaHRiMSMwIQYJKoZIhvcNAQkBFhRhZG1pbkBldXJvcGFjb3JwLmh0YjAe&#xa;Fw0xNzA0MTkwOTA2MjJaFw0yNzA0MTcwOTA2MjJaMIGUMQswCQYDVQQGEwJHUjEP&#xa;MA0GA1UECAwGQXR0aWNhMQ8wDQYDVQQHDAZBdGhlbnMxGDAWBgNVBAoMD0V1cm9w&#xa;YUNvcnAgTHRkLjELMAkGA1UECwwCSVQxFzAVBgNVBAMMDmV1cm9wYWNvcnAuaHRi&#xa;MSMwIQYJKoZIhvcNAQkBFhRhZG1pbkBldXJvcGFjb3JwLmh0YjCCAaIwDQYJKoZI&#xa;hvcNAQEBBQADggGPADCCAYoCggGBAKzVzRrrM1MSWnf8zniIPKt0SXGDB2msYUm3&#xa;rQJ3j31wPfn9xJOWeIpBCIbtXkRqO3XGrLjG/M0Slp3sa/lQ+1dk8aupaudrJvCm&#xa;ITzLnGvtzrtyDlPkozH2wqM+tJx351gKhfrdF81TItS8oe3yskPW3MvEDbi5lPQM&#xa;OVZk4dhFT4l94E1zrRoapU9fqNL66BdEzeEdS6XwntdARBrEyEoCp7nFIGMBKSIn&#xa;JzxIh2VS98ybxkw58QcDEG9ClDH49nglkKmQfAevGKil8f1f9NYRwW3YOCvuzAA7&#xa;Osg+pLEp4de6MEf408+AOhxl4CvgZKYWvmu7b+OSrFDN8cHFy/bQ2fvrjXNazjA0&#xa;9FIj4wivJ7JgJOCdXEianNZkvLzqPXGS/dVUrFF5fzyG0z5xOTvABZp86fNa3yNu&#xa;zLb04h3j04SvfJ+T3CzkZDWVsFvOYdKsce600S/iaUoqE7XQH6QPB54ba5ailVtH&#xa;npmV1uVqVxT7tXAs0ztIDpqzJ0XAnwIDAQABo4GaMIGXMB0GA1UdDgQWBBSdw09g&#xa;/iRsaKt8R137PRpTAfuTgTA6BgNVHREEMzAxghJ3d3cuZXVyb3BhY29ycC5odGKC&#xa;G2FkbWluLXBvcnRhbC5ldXJvcGFjb3JwLmh0YjAfBgNVHSMEGDAWgBSdw09g/iRs&#xa;aKt8R137PRpTAfuTgTAMBgNVHRMEBTADAQH/MAsGA1UdDwQEAwIFoDANBgkqhkiG&#xa;9w0BAQsFAAOCAYEAbv2ccFD/d2ovr3dkIqL1m2Qo3AgMObUaBczB37KDsB0w6lzf&#xa;EOM/aBVth8LarblnVUJE0tk8Io7VBcTP9hF2nt3BuSM0mF6yMY3WRY+23JJpNxSO&#xa;nOrZ1xLB7a6XTwSTWD0kg2bRbjSbiEWaUzY/RrqtCF1NThgyXo0wuMWPpPICmbd/&#xa;5ID8iOH+rmR3nR4fP80J38SUmvrsXAmifbsbKaKHspNMclQ2Idfiyv53xAoFrJzV&#xa;cuxHKyBxYn8A5DPRIhbesLF2NAy0d4aziNeVgGQnSA9cV9RhN454nuzwqKb33BlF&#xa;L8cpG59w3xR8RuyTyZql4uBPZtogzh0pc0PyxX2E2O5nbn85aqYDkVW7aUkeiU69&#xa;LAiIp8s6Z+Rhe2rN4RAudtMcWaMTwjBOb1k1UrJ+0T7Av3O5nJk5kd/Ee5LUD2jX&#xa;wE9Q72WLg1HP/PSSJPsNASSAW4OWSYG1CqLIhfRk5wJtfi6oR9VO+CpajWvqB0Ej&#xa;PTXIrDgdEK1VKan9&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<osmatch name="Linux 3.10 - 4.11" accuracy="92" line="63230">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.12" accuracy="92" line="63436">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:3.12</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.13" accuracy="92" line="63553">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:3.13</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.13 or 4.2" accuracy="92" line="63776">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:3.13</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:4.2</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.16" accuracy="92" line="63944">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:3.16</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.16 - 4.6" accuracy="92" line="64164">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2 - 4.9" accuracy="92" line="65105">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.8 - 3.11" accuracy="92" line="66079">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.2" accuracy="92" line="67075">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:4.2</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.4" accuracy="92" line="67111">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:4.4</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="25" lastboot="Tue Jun 30 21:22:22 2020"/>
+<distance value="2"/>
+<tcpsequence index="263" difficulty="Good luck!" values="5A594CA2,881BEEB9,AE2A90,4088E68,1FEEB277,8BF69F41"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="142D,1449,1464,147E,149C,14B4"/>
+<trace port="22" proto="tcp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="25.17"/>
+<hop ttl="2" ipaddr="10.10.10.22" rtt="27.68"/>
+</trace>
+<times srtt="22453" rttvar="4201" to="100000"/>
+</host>
+<runstats><finished time="1593566567" timestr="Tue Jun 30 21:22:47 2020" elapsed="128.66" summary="Nmap done at Tue Jun 30 21:22:47 2020; 1 IP address (1 host up) scanned in 128.66 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

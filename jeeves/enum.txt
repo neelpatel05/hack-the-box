@@ -1,0 +1,7 @@
+Microsoft IIS 10.0 80
+Microsodt Windows RPC 135
+Microsoft ds 445
+jetty 9.4 snapshot 50000
+
+
+askjevees 10.10.10.63:50000

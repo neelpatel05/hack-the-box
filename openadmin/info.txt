@@ -1,0 +1,2 @@
+'db_login' => 'ona_sys',
+        'db_passwd' => 'n1nj4W4rri0R!',
